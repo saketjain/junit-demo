@@ -7,6 +7,8 @@ import java.util.Arrays;
  */
 public class CalculatorService {
 
+    private int SHIFT;
+
     public int add(int a, int b) {
         return a + b;
     }
@@ -36,5 +38,13 @@ public class CalculatorService {
         } else {
             return 0;
         }
+    }
+
+    public int getSHIFT() {
+        return SHIFT;
+    }
+
+    public void setSHIFT(int SHIFT) {
+        this.SHIFT = SHIFT;
     }
 }
